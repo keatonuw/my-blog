@@ -1,1 +1,1 @@
-web: java -jar build/libs/personalblog-0.0.1-SNAPSHOT.jar -XX:+UseContainerSupport
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/*.jar -XX:+UseContainerSupport
