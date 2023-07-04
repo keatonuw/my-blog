@@ -1,1 +1,1 @@
-web: ./gradlew bootRun
+web: java -jar ./build/libs/personalblog-0.0.1-SNAPSHOT.jar
