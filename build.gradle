@@ -8,6 +8,7 @@ group = 'com.kowaluw'
 version = '0.0.1-SNAPSHOT'
 
 java {
+	targetCompatibility = '17'
 	sourceCompatibility = '17'
 }
 
