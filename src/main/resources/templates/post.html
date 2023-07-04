@@ -1,23 +1,9 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1 th:text="${post.title}">title</h1>
-    <p th:text="${post.id}">id</p>
-    <p th:text="${post.content}">body</p>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keaton Kowal</title>
+    <title>Post | Keaton Kowal</title>
     <link href="../static/temp.css" media="all"
           rel="stylesheet"
           th:href="@{/temp.css}"
@@ -36,7 +22,7 @@
                     <h4 th:text="${post.subtitle}" class="title">Subtitle</h4>
                     <h4 th:text="${post.posted}" class="date">Date</h4>
                 </div>
-                <p th:text="${post.contents}">body</p>
+                <p th:utext="${post.contents}">body</p>
                 <br>
                 <i><h3>Links:</h3></i>
                 <div th:each="link : ${links}">
