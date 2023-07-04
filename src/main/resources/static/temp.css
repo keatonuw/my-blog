@@ -51,7 +51,7 @@ h1 {
 }
 
 img {
-    width: 100%;
+    width: 50%;
     animation-duration: 0.2s;
     animation-name: wiggle;
     /* animation-iteration-count: infinite; */
@@ -134,7 +134,7 @@ a > .article:hover {
 .sidebar {
     display: flex;
     flex-direction: column;
-    flex: 1 1 100px;
+    flex: 1 0 250px;
 }
 
 .content {
