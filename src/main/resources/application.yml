@@ -3,7 +3,7 @@ spring:
         ansi:
             enabled: always
     datasource:
-        url: ${DB_URL} #jdbc:postgresql://localhost:5432/postgres
+        url: ${DATABASE_URL} #jdbc:postgresql://localhost:5432/postgres
         username: postgres
     jpa:
         open-in-view: true
