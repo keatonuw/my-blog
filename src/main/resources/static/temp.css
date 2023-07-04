@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Roboto+Mono:ital,wght@0,400;1,700&display=swap');
+
+:root {
+    --primary: #1b1c1f;
+    --secondary: #b46e63;
+    /* --secondary:  #ece2c9; */
+    --highlight: #edf4eb;
+    --accent: #b46e63;
+    --accent-secondary: #AA3A2A;
+    /* --primary: #2F383A;
+    --secondary: #A6AB93;
+    --highlight: #DEDACA;
+    --accent: #979EA9;
+    --accent-secondary: #825854; */
+}
+
+* {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary);
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 2px 2px #b46e6359;
+    text-emphasis: true;
+    letter-spacing: 10px;
+}
+
+.bordered, .bordered-nopad {
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+}
+
+.bordered {
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    animation-duration: 0.2s;
+    animation-name: wiggle;
+    /* animation-iteration-count: infinite; */
+    animation-play-state: paused;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    rotate: 0;
+}
+
+img:hover {
+    animation-play-state: running;
+}
+
+@keyframes wiggle {
+    from {
+        rotate: 0;
+    }
+
+    /* from {
+        rotate: -5deg;
+    } */
+
+    /* 50% {
+        rotate: 0deg;
+    } */
+
+
+    to {
+        rotate: 5deg;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+a > .article:hover {
+    background-color: var(--accent);
+    box-shadow: 2px 2px inset var(--primary);
+    backdrop-filter: contrast(130%) brightness(250%);
+    background: linear-gradient(180deg, rgba(170,58,42,1), rgba(170,58,42,0.57)),
+	    url("data:image/svg+xml,%3Csvg viewBox='0 0 274 274' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4.12' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+
+}
+
+.page {
+    max-width: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    background-color: var(--highlight);
+    padding: 0 10px 10px 10px;
+    /* box-shadow: 2px 2px inset var(--primary); */
+    backdrop-filter: contrast(130%) brightness(250%);
+    background: linear-gradient(0deg, rgba(237,244,235,0), rgba(237, 244, 235, 0.836)),
+	    url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2.83' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+
+}
+
+.container {
+    filter: contrast(100%) brightness(100%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    /* background-color: var(--primary);
+    border-radius: 5px; */
+    background-color: var(--highlight);
+    box-shadow: 2px 2px var(--primary);
+}
+
+.container > div {
+    margin: 2px;
+    border-radius: 5px;
+    background-color: var(--highlight);
+    padding: 10px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100px;
+}
+
+.content {
+    flex: 1 1 50%;
+}
+
+.subtitle {
+    display: flex;
+}
+
+.subtitle > .title {
+    flex-grow: 1;
+}
+
+.article {
+    box-shadow: 2px 2px inset var(--primary);
+    margin-bottom: 10px;
+}
+
+.article > h2 {
+    border-bottom: 2px dotted var(--primary);
+}
+
+.post {
+    flex: auto;
+    background-color: var(--highlight);
+    box-shadow: 2px 2px var(--primary);
+}
+
+h2 {
+    border-bottom: 2px dotted var(--primary);
+    margin-bottom: 10px;
+}
+
+.button {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+a > .button:hover {
+    background-color: var(--accent);
+    backdrop-filter: contrast(130%) brightness(250%);
+    background: linear-gradient(180deg, rgba(170,58,42,1), rgba(170,58,42,0.57)),
+	    url("data:image/svg+xml,%3Csvg viewBox='0 0 274 274' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4.12' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+
+}

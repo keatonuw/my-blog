@@ -1,0 +1,7 @@
+${AnsiBackground.BLUE}${AnsiColor.BRIGHT_WHITE}${AnsiStyle.BOLD}
+                            _         
+ |/  _  _ _|_ _ __  ,  _    |_) |  _  _ 
+ |\ (/_(_| |_(_)| |   _>    |_) | (_)(_|
+                                     __|
+${AnsiStyle.ITALIC} ${application.title} ${application.version}
+${AnsiBackground.DEFAULT}${AnsiStyle.NORMAL}${AnsiColor.DEFAULT}

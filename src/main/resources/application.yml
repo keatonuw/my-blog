@@ -1,0 +1,16 @@
+spring:
+    output:
+        ansi:
+            enabled: always
+    datasource:
+        url: ${DB_URL} #jdbc:postgresql://localhost:5432/postgres
+        username: postgres
+    jpa:
+        open-in-view: true
+        properties:
+            hibernate:   
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+
+application:
+    title: personalblog
+    version: 0.0.1
