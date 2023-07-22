@@ -1,18 +1,15 @@
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'>
   <defs>
-      <linearGradient id="grad" gradientTransform="rotate(90)">
-        <stop offset="0%" stop-color="#ffffff44" />
-        <stop offset="50%" stop-color="#AA3A2A" />
-        <stop offset="100%" stop-color="#370f08" />
-      </linearGradient>
-    <pattern id="star" viewBox="0,0,5,5" width="1%" height="1%">
-      <circle cx="1%" cy="4%" r="0.5%" fill="white"/>
-      <!-- <rect width="10" height="10"/> -->
+    <pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(1) rotate(0)'>
+      <rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,0)'/>
+      <path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='1' stroke='#b46e63' stroke-dashoffset='1' stroke-dasharray='2' fill='none'/>
     </pattern>
-    <mask id="starmask">
-      <rect width="100%" height="100%" fill="url(#star)" />
-    </mask>
+    <linearGradient id='g' gradientTransform='rotate(90)'>
+      <stop offset="25%" stop-color="#e9ecefff"/> 
+      <stop offset="90%" stop-color="#e9ecef00"/> 
+      <stop offset="100%" stop-color="#e9ecefff"/> 
+    </linearGradient>
   </defs>
-
-  <rect width="100%" height="100%" fill="url(#grad)" mask="url(#starmask)" />
+  <rect width='800%' height='800%' transform='translate(0,0)' fill='url(#a)'/>
+  <rect width='100%' height='100%' transform='translate(0,0)' fill='url(#g)'/>
 </svg>
